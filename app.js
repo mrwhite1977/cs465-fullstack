@@ -7,7 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
 var travelRouter = require('./app_server/routes/travel');
-var handdlebars = require('hbs');
+var handlebars = require('hbs');
 
 var app = express();
 
@@ -15,7 +15,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'app_server', 'views'));
 
 // register handelbars partials (https://npmjs.com.package/hbs)
-handdlebars.registerPartials(__dirname + '/app_server/views/partials');
+handlebars.registerPartials(__dirname + '/app_server/views/partials');
 
 app.set('view engine', 'hbs');
 

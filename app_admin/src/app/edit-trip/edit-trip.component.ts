@@ -89,4 +89,7 @@ export class EditTripComponent implements OnInit {
         })
       }
   }
+
+  // Get the form short name to access the form fields
+  get f() { return this.editForm.controls; }
 }
